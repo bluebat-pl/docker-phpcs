@@ -1,0 +1,9 @@
+env:
+  environment: test
+  
+build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    
+    -name: echoing
+      run: echo "test"
