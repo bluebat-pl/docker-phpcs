@@ -1,0 +1,21 @@
+name: hello test
+
+on:
+  push: 
+    branches: 
+      - 'ci*'
+  pull_request:
+    branches: 
+      - 'ci*'
+      
+jobs:
+  my-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: my test first step
+        run: echo "test started"
+        
+      - name: my test will fail
+        run: exit 1
+        
