@@ -15,5 +15,7 @@ jobs:
     steps:
       - name: my test first step
         run: echo "test started"
-        run: echo 1
+        
+      - name: my test will fail
+        run: echo 2
         
