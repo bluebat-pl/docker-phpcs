@@ -17,5 +17,5 @@ jobs:
         run: echo "test started"
         
       - name: my test will fail
-        run: echo 2
+        run: exit 1
         
